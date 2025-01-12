@@ -136,6 +136,7 @@ int main()  //inicio da execução do codigo
 		printf("\t1 - Registrar Nomes\n");
 		printf("\t2 - Consultar Nomes\n");
 		printf("\t3 - Deletar Nomes\n\n\n");
+		printf("\t4 - Sair do Sistema\n\n");
 		printf("Opção: ");    //Fim do menu
 	
 		scanf("%d", &opcao);    //Armezenando a escolha do usuário
@@ -156,6 +157,11 @@ int main()  //inicio da execução do codigo
 			case 3:
 			deletar();  //chamada da função de deletar
 			break;  //interrompe a função de um loop
+			
+			case 4:
+				printf("Obrigado por utilizar o sistema!\n");
+				return 0;
+				break;
 			
 			default: //especifica o que deve ser executado se nenhuma das fuinções for atendida
 				printf("Essa opção não está disponível\n");
